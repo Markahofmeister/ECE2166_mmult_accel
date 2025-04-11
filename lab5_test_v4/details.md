@@ -6,6 +6,8 @@ This example a simple hello world example to explain the Host and Kernel code st
 Vitis kernel can have one s_axilite interface which will be used by host application to configure the kernel. Here `bundle=control` is defined which is s_axilite interface and associated with all the arguments (in1, in2, out_r and size). control interface must also be associated with `return`.
 
 ```c++
+
+
 void vadd(const unsigned int *in1, 
           const unsigned int *in2, 
           unsigned int *out_r,     
