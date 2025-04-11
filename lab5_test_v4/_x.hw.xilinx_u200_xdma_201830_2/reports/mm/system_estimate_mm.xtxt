@@ -1,0 +1,57 @@
+===============================================================================
+Version:    v++ v2019.2 (64-bit)
+Build:      SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+Copyright:  Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Created:    Thu Apr  8 15:57:24 2021
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             mm
+Target Device:           xilinx:u200:xdma:201830.2
+Target Clock:            300.000000MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name  Type  Target              OpenCL Library  Compute Units
+-----------  ----  ------------------  --------------  -------------
+mm           c     fpga0:OCL_REGION_0  mm              1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     mm
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit  Kernel Name  Module Name  Target Frequency  Estimated Frequency
+------------  -----------  -----------  ----------------  -------------------
+mm_1          mm           mm_entry616  300.300293        821.692688
+mm_1          mm           readA        300.300293        411.015198
+mm_1          mm           changeARate  300.300293        411.015198
+mm_1          mm           readB        300.300293        411.015198
+mm_1          mm           comp         300.300293        411.015198
+mm_1          mm           writeAB      300.300293        411.015198
+mm_1          mm           mm           300.300293        411.015198
+
+Latency Information
+Compute Unit  Kernel Name  Module Name  Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+------------  -----------  -----------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+mm_1          mm           mm_entry616  0               0              0             0               0 ns             0 ns            0 ns
+mm_1          mm           readA        undef           undef          undef         undef           undef            undef           undef
+mm_1          mm           changeARate  undef           undef          undef         undef           undef            undef           undef
+mm_1          mm           readB        undef           undef          undef         undef           undef            undef           undef
+mm_1          mm           comp         undef           undef          undef         undef           undef            undef           undef
+mm_1          mm           writeAB      undef           undef          undef         undef           undef            undef           undef
+mm_1          mm           mm           undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit  Kernel Name  Module Name  FF     LUT    DSP  BRAM  URAM
+------------  -----------  -----------  -----  -----  ---  ----  ----
+mm_1          mm           mm_entry616  3      65     0    0     0
+mm_1          mm           readA        3613   2658   19   0     0
+mm_1          mm           changeARate  2244   6102   7    0     0
+mm_1          mm           readB        3581   2641   19   0     0
+mm_1          mm           comp         9482   9488   260  256   0
+mm_1          mm           writeAB      3187   2103   21   0     0
+mm_1          mm           mm           28262  30385  326  433   0
+-------------------------------------------------------------------------------

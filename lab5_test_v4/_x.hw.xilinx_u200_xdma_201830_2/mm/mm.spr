@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mm" dir="">
+  <FileSets>
+    <FileSet Name="kernel_mm" Type="DesignSrcs">
+      <File Path="/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp"/>
+      <Config/>
+    </FileSet>
+  </FileSets>
+  <Runs/>
+</project>

@@ -1,0 +1,250 @@
+<ENTRY>
+{
+ "session": {
+  "name": "v++_compile_mm",
+  "pid": "0",
+  "uuid": "c5184d27-6a4e-4967-ac53-30c0cfaa1c89",
+  "description": "",
+  "timestamp": "0",
+  "outputFiles": [
+   {
+    "type": "JSON",
+    "mode": "CLIENT_ONLY",
+    "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/.tlog/v++_compile_mm.xtl",
+    "continuous": true
+   },
+   {
+    "type": "JSON",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm.xo.compile_summary",
+    "continuous": true
+   },
+   {
+    "type": "BINARY_PROTOBUF",
+    "mode": "LOCAL_IF_NO_CONNECT",
+    "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm.xo.compile_summary.pb",
+    "continuous": true
+   }
+  ]
+ },
+ "thisFile": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/.tlog/v++_compile_mm.xtl",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Apr  7 15:54:44 2025",
+ "timestampMillis": "1744055684700",
+ "buildStep": {
+  "cmdId": "9e09f1de-2feb-4453-9015-cc05774ee5d8",
+  "name": "v++",
+  "logFile": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm.steps.log",
+  "commandLine": "/ihome/crc/install/xilinx/Vitis/2019.2/bin/unwrapped/lnx64.o/v++  --xp \"vivado_prop:run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --xp \"misc:report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -t hw --platform xilinx_u200_xdma_201830_2 --save-temps --temp_dir ./_x.hw.xilinx_u200_xdma_201830_2 -c -k mm -Isrc -o_x.hw.xilinx_u200_xdma_201830_2/mm.xo src/mm.cpp ",
+  "args": [
+   "-t",
+   "hw",
+   "--platform",
+   "xilinx_u200_xdma_201830_2",
+   "--save-temps",
+   "--temp_dir",
+   "./_x.hw.xilinx_u200_xdma_201830_2",
+   "-c",
+   "-k",
+   "mm",
+   "-Isrc",
+   "-o_x.hw.xilinx_u200_xdma_201830_2/mm.xo",
+   "src/mm.cpp"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Apr  7 15:54:44 2025",
+ "timestampMillis": "1744055684722",
+ "status": {
+  "cmdId": "9e09f1de-2feb-4453-9015-cc05774ee5d8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Apr  7 15:54:58 2025",
+ "timestampMillis": "1744055698995",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u200_xdma_201830_2.xpfm",
+  "hardwareDsa": "xilinx_u200_xdma_201830_2.dsa",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u200_xdma_201830_2",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mm",
+     "file": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm.xo",
+     "reports": []
+    },
+    "sources": [
+     "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp"
+    ],
+    "cuNames": []
+   }
+  ]
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Apr  7 15:54:59 2025",
+ "timestampMillis": "1744055699015",
+ "buildStep": {
+  "cmdId": "cd5c060d-cc15-4c0d-b6c2-503f71c5d289",
+  "name": "vivado_hls",
+  "logFile": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/vivado_hls.log",
+  "commandLine": "vivado_hls -f /ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/mm.tcl -messageDb vivado_hls.pb",
+  "args": [
+   "vivado_hls",
+   "-f",
+   "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/mm.tcl",
+   "-messageDb",
+   "vivado_hls.pb"
+  ],
+  "iniFiles": []
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Apr  7 15:54:59 2025",
+ "timestampMillis": "1744055699019",
+ "status": {
+  "cmdId": "cd5c060d-cc15-4c0d-b6c2-503f71c5d289",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Apr  7 15:57:21 2025",
+ "timestampMillis": "1744055841931",
+ "status": {
+  "cmdId": "cd5c060d-cc15-4c0d-b6c2-503f71c5d289",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:24 2025",
+ "timestampMillis": "1744055844744",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/mm/solution/.autopilot/db/mm.design.xml",
+  "name": "mm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:24 2025",
+ "timestampMillis": "1744055844745",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/mm/solution/.autopilot/db/.message_syn.xml",
+  "name": "mm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:24 2025",
+ "timestampMillis": "1744055844760",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/reports/mm/hls_reports/mm_csynth.rpt",
+  "name": "mm",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:24 2025",
+ "timestampMillis": "1744055844761",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/mm/mm/mm/solution/syn/report/mm_csynth.xml",
+  "name": "mm",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:24 2025",
+ "timestampMillis": "1744055844779",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/reports/mm/system_estimate_mm.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:26 2025",
+ "timestampMillis": "1744055846731",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/reports/mm/v++_compile_mm_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Apr  7 15:57:26 2025",
+ "timestampMillis": "1744055846734",
+ "report": {
+  "path": "/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/_x.hw.xilinx_u200_xdma_201830_2/v++_compile_mm_guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Apr  7 15:57:26 2025",
+ "timestampMillis": "1744055846740",
+ "status": {
+  "cmdId": "9e09f1de-2feb-4453-9015-cc05774ee5d8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

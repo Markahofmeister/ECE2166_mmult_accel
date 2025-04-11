@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp&apos; ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1062.688 ; gain = 530.133 ; free physical = 38138 ; free virtual = 124644"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1062.688 ; gain = 530.133 ; free physical = 38138 ; free virtual = 124644"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1062.688 ; gain = 530.133 ; free physical = 38087 ; free virtual = 124625"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="WARNING" prefix="[SYNCHK 200-23]" key="SYNCHK_VAR_INDEX_RANGE_359" tag="" content="/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:84: variable-indexed range selection may cause suboptimal QoR."/>
+	<Message severity="INFO" prefix="[SYNCHK 200-10]" key="SYNCHK_SYNCHK_SUMMARY_377" tag="" content="0 error(s), 1 warning(s)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1062.688 ; gain = 530.133 ; free physical = 38086 ; free virtual = 124621"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;init_i_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:68) in function &apos;comp&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;readB_j_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:79) in function &apos;comp&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;i_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:92) in function &apos;comp&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;writeAB_j_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:104) in function &apos;comp&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;init_j_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:70) in function &apos;comp&apos; completely with a factor of 256."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.2.1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:82) in function &apos;comp&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;j_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:95) in function &apos;comp&apos; completely with a factor of 256."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1.3.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:107) in function &apos;comp&apos; completely with a factor of 32."/>
+	<Message severity="WARNING" prefix="[XFORM 203-104]" key="XFORM_PARTITION_VAR_INDEX_118" tag="ARRAY,SDX_ARRAY" content="Completely partitioning array &apos;AB_block&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:63) accessed through non-constant indices on dimension 2 (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:109:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;AB_block&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:63) in dimension 2 completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-104]" key="XFORM_PARTITION_VAR_INDEX_118" tag="ARRAY,SDX_ARRAY" content="Completely partitioning array &apos;Bj&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:77) accessed through non-constant indices on dimension 1 (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:87:8), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Bj&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:77) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;mm&apos;, detected/extracted 6 process function(s): 
+	 &apos;mm.entry61&apos;
+	 &apos;readA&apos;
+	 &apos;changeARate&apos;
+	 &apos;readB&apos;
+	 &apos;comp&apos;
+	 &apos;writeAB&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 1070.691 ; gain = 538.137 ; free physical = 37769 ; free virtual = 124404"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:122:17) in function &apos;writeAB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:121:17) in function &apos;writeAB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:120:16) in function &apos;writeAB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:51:18) in function &apos;readB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:50:18) in function &apos;readB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:49:17) in function &apos;readB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:48:16) in function &apos;readB&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:36:18) in function &apos;readA&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:35:18) in function &apos;readA&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:34:17) in function &apos;readA&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:33:16) in function &apos;readA&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;k_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:76:41) in function &apos;comp&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;kb_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:75:46) in function &apos;comp&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;writeAB_i_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:103:48) in function &apos;comp&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;jb_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:67:45) in function &apos;comp&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;ib_loop&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:66:44) in function &apos;comp&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-1.1.1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:17:20) in function &apos;changeARate&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:16:18) in function &apos;changeARate&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:15:18) in function &apos;changeARate&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1.1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:14:17) in function &apos;changeARate&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:13:16) in function &apos;changeARate&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-444]" key="HLS 200-444" tag="AXI,SDX_AXI" content="Inferring multiple bus burst write of a total cumulative length 8 on port &apos;AB.V&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:125:44). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings."/>
+	<Message severity="INFO" prefix="[HLS 200-444]" key="HLS 200-444" tag="AXI,SDX_AXI" content="Inferring multiple bus burst read of a total cumulative length 8 on port &apos;B_p.V&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:54:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings."/>
+	<Message severity="INFO" prefix="[HLS 200-444]" key="HLS 200-444" tag="AXI,SDX_AXI" content="Inferring multiple bus burst read of a total cumulative length 8 on port &apos;A_p.V&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:39:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings."/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;AB_block[0]&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:71:6)"/>
+	<Message severity="INFO" prefix="[HLS 200-472]" key="HLS 200-472" tag="" content="Inferring partial write operation for &apos;AB_block[0]&apos; (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:97:2)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1163.723 ; gain = 631.168 ; free physical = 37441 ; free virtual = 124128"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;mm&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;mm.entry616&apos; to &apos;mm_entry616&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;mm_entry616&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 35.99 seconds; current allocated memory: 220.978 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.09 seconds; current allocated memory: 221.150 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;readA&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln39_2) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln39_1) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln39) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=bound49_i) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 17."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.72 seconds; current allocated memory: 222.051 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.7 seconds; current allocated memory: 222.973 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;changeARate&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=bound16) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.79 seconds; current allocated memory: 223.394 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.34 seconds; current allocated memory: 223.711 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;readB&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln54_2) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln54_1) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln54) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=bound49_i) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 17."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.81 seconds; current allocated memory: 224.429 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.33 seconds; current allocated memory: 225.332 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;comp&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_255) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_254) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_253) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_252) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_251) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_250) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_249) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_248) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_247) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_246) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_245) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_244) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_243) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_242) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_241) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_240) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_239) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_238) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_237) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_236) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_235) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_234) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_233) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_232) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_231) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_230) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_229) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_228) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_227) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_226) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_225) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_224) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_223) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_222) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_221) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_220) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_219) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_218) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_217) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_216) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_215) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_214) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_213) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_212) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_211) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_210) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_209) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_208) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_207) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_206) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_205) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_204) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_203) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_202) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_201) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_200) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_199) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_198) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_197) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_196) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_195) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_194) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_193) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_192) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_191) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_190) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_189) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_188) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_187) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_186) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_185) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_184) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_183) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_182) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_181) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_180) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_179) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_178) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_177) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_176) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_175) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_174) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_173) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_172) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_171) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_170) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_169) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_168) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_167) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_166) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_165) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_164) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_163) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_162) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_161) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_160) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_159) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_158) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_157) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_156) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_155) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_154) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_153) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_152) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_151) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_150) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_149) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_148) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_147) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_146) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_145) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_144) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_143) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_142) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_141) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_140) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_139) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_138) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_137) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_136) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_135) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_134) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_133) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_132) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_131) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_130) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_129) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_128) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_127) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_126) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_125) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_124) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_123) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_122) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_121) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_120) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_119) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_118) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_117) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_116) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_115) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_114) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_113) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_112) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_111) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_110) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_109) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_108) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_107) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_106) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_105) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_104) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_103) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_102) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_101) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_100) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_99) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_98) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_97) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_96) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_95) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_94) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_93) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_92) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_91) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_90) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_89) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_88) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_87) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_86) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_85) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_84) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_83) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_82) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_81) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_80) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_79) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_78) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_77) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_76) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_75) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_74) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_73) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_72) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_71) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_70) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_69) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_68) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_67) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_66) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_65) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_64) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_63) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_62) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_61) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_60) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_59) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_58) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_57) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_56) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_55) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_54) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_53) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_52) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_51) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_50) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_49) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_48) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_47) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_46) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_45) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_44) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_43) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_42) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_41) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_40) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_39) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_38) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_37) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_36) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_35) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_34) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_33) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_32) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_31) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_30) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_29) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_28) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_27) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_26) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_25) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_24) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_23) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_22) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_21) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_20) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_19) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_18) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_17) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_16) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_15) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_14) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_13) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_12) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_11) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_10) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_9) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_8) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_7) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_6) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_5) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_4) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_3) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_2) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97_1) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln97) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=bound268) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;init_i_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 1."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;readB_j_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;i_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 5."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;writeAB_i_loop_writeAB_j_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 9.29 seconds; current allocated memory: 238.971 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 6.25 seconds; current allocated memory: 253.324 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;writeAB&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln125_1) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln125_3) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln125_2) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=bound49_i) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[HLS 200-486]" key="HLS 200-486" tag="" content="Changing DSP48 latency (root=mul_ln125) to 3 in order to utilize available DSP registers."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 15."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 7.02 seconds; current allocated memory: 254.068 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.48 seconds; current allocated memory: 254.863 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;mm&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.77 seconds; current allocated memory: 255.112 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.19 seconds; current allocated memory: 256.009 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;mm_entry616&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;mm_entry616&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.12 seconds; current allocated memory: 256.516 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;readA&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_25ns_75ns_100_5_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32ns_43ns_75_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32s_32s_32_4_1&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;readA&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.25 seconds; current allocated memory: 258.577 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;changeARate&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_25ns_75ns_100_5_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32ns_43ns_75_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;changeARate&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.7 seconds; current allocated memory: 262.132 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;readB&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_25ns_75ns_100_5_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32ns_43ns_75_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32s_32s_32_4_1&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;readB&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.5 seconds; current allocated memory: 264.891 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;comp&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mac_muladd_16s_16s_16ns_16_4_1&apos;: 256 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_25ns_32ns_57_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mux_83_16_1_1&apos;: 31 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;comp&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.79 seconds; current allocated memory: 291.402 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;writeAB&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_25ns_43ns_68_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32s_24ns_32_4_1&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;mm_mul_32s_32s_32_4_1&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;writeAB&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 10.73 seconds; current allocated memory: 348.874 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;mm&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/gmem0&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/gmem1&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/gmem2&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/A_p_V&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/B_p_V&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/AB_p_V&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;mm/N&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;mm&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;A_p_V&apos;, &apos;B_p_V&apos;, &apos;AB_p_V&apos; and &apos;N&apos; to AXI-Lite port control."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;mm&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.87 seconds; current allocated memory: 353.459 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,SDX_LOOP" content="**** Loop Constraint Status: All loop constraints were satisfied."/>
+	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,SDX_KERNEL" content="**** Estimated Fmax: 411.02 MHz"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_32ns_43ns_75_4_1_Mul4S_0&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_25ns_75ns_100_5_1_MulnS_0&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_32s_32s_32_4_1_Mul4S_1&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_25ns_32ns_57_4_1_Mul4S_2&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;mm_comp_AB_block_0_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_25ns_43ns_68_4_1_Mul4S_3&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;mm_mm_mul_32s_24ns_32_4_1_Mul4S_4&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;N_c_U(mm_fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;N_c8_U(mm_fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;A_p_V_c_U(mm_fifo_w64_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;B_p_V_c_U(mm_fifo_w64_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;AB_p_V_c_U(mm_fifo_w64_d5_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;AStreamWide_V_V_U(mm_fifo_w512_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;N_c9_U(mm_fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;AStream_V_U(mm_fifo_w16_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;N_c10_U(mm_fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;BStream_V_V_U(mm_fifo_w512_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;ABStream_V_V_U(mm_fifo_w512_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;N_c11_U(mm_fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_writeAB_U0_U(mm_start_for_writeAB_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_changeARate_U0_U(mm_start_for_changeARate_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_comp_U0_U(mm_start_for_comp_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:56 ; elapsed = 00:01:40 . Memory (MB): peak = 1299.730 ; gain = 767.176 ; free physical = 38535 ; free virtual = 124929"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1063" tag="" content="Generating VHDL RTL for mm with prefix mm_."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1064" tag="" content="Generating Verilog RTL for mm with prefix mm_."/>
+</Messages>

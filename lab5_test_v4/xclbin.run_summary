@@ -1,0 +1,132 @@
+{
+    "schema_version":
+    {
+        "major": "1",
+        "minor": "1",
+        "patch": "0"
+    },
+    "generation":
+    {
+        "source": "ocl",
+        "PID": "111969",
+        "timestamp": "1744104402637"
+    },
+    "files":
+    [
+        {
+            "name": "profile_summary.csv",
+            "type": "PROFILE"
+        }
+    ],
+    "profile":
+    {
+        "header":
+        {
+            "name": "Profile Summary",
+            "generated": "2025-04-08 05:26:39",
+            "epochTime": "1744104399811",
+            "application": "host",
+            "platform": "Xilinx",
+            "toolVersion": "2020.2",
+            "XRT build version": "2.9.317",
+            "Build version branch": "2020.2_PU1",
+            "Build version hash": "b0230e59e22351fb957dc46a6e68d7560e5f630c",
+            "Build version date": "N\/A",
+            "flow": "Software Emulation",
+            "devices": "",
+            "totalTime": "2824.629868"
+        },
+        "apiCalls":
+        {
+            "clGetExtensionFunctionAddress":
+            {
+                "numCalls": "2",
+                "totalTime": "0.04543499999999767",
+                "minTime": "0.005979000000003509",
+                "avgTime": "0.02271749999999884",
+                "maxTime": "0.03945599999999416"
+            },
+            "clGetPlatformInfo":
+            {
+                "numCalls": "14",
+                "totalTime": "0.02359399999999567",
+                "minTime": "0.001514000000000237",
+                "avgTime": "0.001685285714285405",
+                "maxTime": "0.002378000000000213"
+            },
+            "clGetDeviceIDs":
+            {
+                "numCalls": "2",
+                "totalTime": "0.00903499999999724",
+                "minTime": "0.002069999999996242",
+                "avgTime": "0.00451749999999862",
+                "maxTime": "0.006965000000000998"
+            },
+            "clGetExtensionFunctionAddressForPlatform":
+            {
+                "numCalls": "2",
+                "totalTime": "0.00810900000001169",
+                "minTime": "0.002390000000005443",
+                "avgTime": "0.004054500000005845",
+                "maxTime": "0.005719000000006247"
+            },
+            "clRetainDevice":
+            {
+                "numCalls": "3",
+                "totalTime": "0.005758999999997627",
+                "minTime": "0.00167300000000381",
+                "avgTime": "0.001919666666665876",
+                "maxTime": "0.002182999999995161"
+            }
+        },
+        "kernelEnqueues": "",
+        "computeUnitUtilization": "",
+        "kernels": "",
+        "hostGlobal":
+        {
+            "writes": "",
+            "reads": ""
+        },
+        "guidanceMetadata":
+        {
+            "DEVICE_EXEC_TIME":
+            {
+                "xilinx_u200_xdma_201830_2-0": "0.000000",
+                "xilinx_u200_xdma_201830_2-1": "0.000000",
+                "xilinx_u200_xdma_201830_2-2": "0.000000"
+            },
+            "CU_CALLS": "",
+            "MIGRATE_MEM":
+            {
+                "host": "0"
+            },
+            "MEMORY_USAGE": "",
+            "PLRAM_DEVICE":
+            {
+                "all": "1"
+            },
+            "HBM_DEVICE":
+            {
+                "all": "0"
+            },
+            "KDMA_DEVICE":
+            {
+                "all": "1"
+            },
+            "P2P_DEVICE":
+            {
+                "all": "1"
+            },
+            "P2P_HOST_TRANSFERS":
+            {
+                "host": "0"
+            },
+            "PORT_BIT_WIDTH": "",
+            "KERNEL_COUNT": "",
+            "OBJECTS_RELEASED":
+            {
+                "all": "0"
+            }
+        }
+    }
+}

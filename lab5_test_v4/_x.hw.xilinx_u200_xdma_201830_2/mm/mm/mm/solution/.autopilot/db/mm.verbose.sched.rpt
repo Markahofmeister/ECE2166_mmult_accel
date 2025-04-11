@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vivado HLS Report for 'mm'
+================================================================
+* Date:           Thu Apr  8 15:56:09 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mm
+* Solution:       solution
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.33 ns | 2.433 ns |   0.90 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?| dataflow |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 9
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 9, States = { 1 2 3 4 5 6 7 8 9 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.21>
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%N_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %N)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 10 'read' 'N_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%AB_p_V_read = call i64 @_ssdm_op_Read.s_axilite.i64(i64 %AB_p_V)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 11 'read' 'AB_p_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 12 [1/1] (1.00ns)   --->   "%B_p_V_read = call i64 @_ssdm_op_Read.s_axilite.i64(i64 %B_p_V)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 12 'read' 'B_p_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%A_p_V_read = call i64 @_ssdm_op_Read.s_axilite.i64(i64 %A_p_V)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 13 'read' 'A_p_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%AB_p_V_c = alloca i64, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 14 'alloca' 'AB_p_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%B_p_V_c = alloca i64, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 15 'alloca' 'B_p_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%A_p_V_c = alloca i64, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 16 'alloca' 'A_p_V_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%N_c11 = alloca i32, align 4" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 17 'alloca' 'N_c11' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%N_c10 = alloca i32, align 4" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 18 'alloca' 'N_c10' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%N_c9 = alloca i32, align 4" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 19 'alloca' 'N_c9' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%N_c8 = alloca i32, align 4" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 20 'alloca' 'N_c8' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%N_c = alloca i32, align 4" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 21 'alloca' 'N_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%AStreamWide_V_V = alloca i512, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:146]   --->   Operation 22 'alloca' 'AStreamWide_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%AStream_V = alloca i16, align 2" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:147]   --->   Operation 23 'alloca' 'AStream_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%BStream_V_V = alloca i512, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:148]   --->   Operation 24 'alloca' 'BStream_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%ABStream_V_V = alloca i512, align 8" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:149]   --->   Operation 25 'alloca' 'ABStream_V_V' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 26 [1/1] (1.21ns)   --->   "call fastcc void @mm.entry616(i32 %N_read, i32* %N_c, i32* %N_c8, i64 %A_p_V_read, i64 %B_p_V_read, i64 %AB_p_V_read, i64* %A_p_V_c, i64* %B_p_V_c, i64* %AB_p_V_c)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:151]   --->   Operation 26 'call' <Predicate = true> <Delay = 1.21> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 27 [2/2] (0.00ns)   --->   "call fastcc void @readA(i512* %gmem0, i64* nocapture %A_p_V_c, i512* %AStreamWide_V_V, i32* nocapture %N_c, i32* %N_c9)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:153]   --->   Operation 27 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 28 [2/2] (0.00ns)   --->   "call fastcc void @readB(i512* %gmem1, i64* nocapture %B_p_V_c, i512* %BStream_V_V, i32* nocapture %N_c8)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:155]   --->   Operation 28 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 29 [1/2] (0.00ns)   --->   "call fastcc void @readA(i512* %gmem0, i64* nocapture %A_p_V_c, i512* %AStreamWide_V_V, i32* nocapture %N_c, i32* %N_c9)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:153]   --->   Operation 29 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 30 [1/2] (0.00ns)   --->   "call fastcc void @readB(i512* %gmem1, i64* nocapture %B_p_V_c, i512* %BStream_V_V, i32* nocapture %N_c8)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:155]   --->   Operation 30 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 31 [2/2] (0.00ns)   --->   "call fastcc void @changeARate(i512* %AStreamWide_V_V, i16* %AStream_V, i32* nocapture %N_c9, i32* %N_c10)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:154]   --->   Operation 31 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 32 [1/2] (0.00ns)   --->   "call fastcc void @changeARate(i512* %AStreamWide_V_V, i16* %AStream_V, i32* nocapture %N_c9, i32* %N_c10)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:154]   --->   Operation 32 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 33 [2/2] (0.00ns)   --->   "call fastcc void @comp(i16* %AStream_V, i512* %BStream_V_V, i512* %ABStream_V_V, i32* nocapture %N_c10, i32* %N_c11)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:156]   --->   Operation 33 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 34 [1/2] (0.00ns)   --->   "call fastcc void @comp(i16* %AStream_V, i512* %BStream_V_V, i512* %ABStream_V_V, i32* nocapture %N_c10, i32* %N_c11)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:156]   --->   Operation 34 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 35 [2/2] (0.00ns)   --->   "call fastcc void @writeAB(i512* %ABStream_V_V, i512* %gmem2, i64* nocapture %AB_p_V_c, i32* nocapture %N_c11)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:157]   --->   Operation 35 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem2), !map !72"   --->   Operation 36 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem1), !map !78"   --->   Operation 37 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i512* %gmem0), !map !82"   --->   Operation 38 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:151]   --->   Operation 39 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %N), !map !86"   --->   Operation 40 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([3 x i8]* @mm_str) nounwind"   --->   Operation 41 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 42 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @AStreamWide_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str33, [1 x i8]* @p_str33, i32 2, i32 2, i512* %AStreamWide_V_V, i512* %AStreamWide_V_V)"   --->   Operation 42 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %AStreamWide_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str34, i32 0, i32 0, [1 x i8]* @p_str35, [1 x i8]* @p_str36, [1 x i8]* @p_str37, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str38, [1 x i8]* @p_str39)"   --->   Operation 43 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 44 [1/1] (0.00ns)   --->   "%empty_24 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @AStream_OC_V_str, i32 1, [1 x i8]* @p_str40, [1 x i8]* @p_str40, i32 2, i32 2, i16* %AStream_V, i16* %AStream_V)"   --->   Operation 44 'specchannel' 'empty_24' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %AStream_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str41, i32 0, i32 0, [1 x i8]* @p_str42, [1 x i8]* @p_str43, [1 x i8]* @p_str44, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str45, [1 x i8]* @p_str46)"   --->   Operation 45 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 46 [1/1] (0.00ns)   --->   "%empty_25 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @BStream_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str47, [1 x i8]* @p_str47, i32 2, i32 2, i512* %BStream_V_V, i512* %BStream_V_V)"   --->   Operation 46 'specchannel' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %BStream_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str48, i32 0, i32 0, [1 x i8]* @p_str49, [1 x i8]* @p_str50, [1 x i8]* @p_str51, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str52, [1 x i8]* @p_str53)"   --->   Operation 47 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%empty_26 = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @ABStream_OC_V_OC_V_str, i32 1, [1 x i8]* @p_str54, [1 x i8]* @p_str54, i32 2, i32 2, i512* %ABStream_V_V, i512* %ABStream_V_V)"   --->   Operation 48 'specchannel' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %ABStream_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str55, i32 0, i32 0, [1 x i8]* @p_str56, [1 x i8]* @p_str57, [1 x i8]* @p_str58, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str59, [1 x i8]* @p_str60)"   --->   Operation 49 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem0, [6 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [6 x i8]* @p_str20, [6 x i8]* @p_str21, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:137]   --->   Operation 50 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem1, [6 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [6 x i8]* @p_str22, [6 x i8]* @p_str21, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:138]   --->   Operation 51 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i512* %gmem2, [6 x i8]* @p_str19, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [6 x i8]* @p_str23, [6 x i8]* @p_str21, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:139]   --->   Operation 52 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64 %A_p_V, [10 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str25, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:140]   --->   Operation 53 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64 %B_p_V, [10 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str25, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:141]   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64 %AB_p_V, [10 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str25, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:142]   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %N, [10 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str25, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:143]   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str24, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [8 x i8]* @p_str25, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:144]   --->   Operation 57 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 58 [1/1] (0.00ns)   --->   "%empty_27 = call i32 (...)* @_ssdm_op_SpecChannel([4 x i8]* @N_c_str, i32 1, [1 x i8]* @p_str73, [1 x i8]* @p_str73, i32 2, i32 0, i32* %N_c, i32* %N_c)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 58 'specchannel' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %N_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str74, i32 0, i32 0, [1 x i8]* @p_str75, [1 x i8]* @p_str76, [1 x i8]* @p_str77, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str78, [1 x i8]* @p_str79)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 59 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 60 [1/1] (0.00ns)   --->   "%empty_28 = call i32 (...)* @_ssdm_op_SpecChannel([5 x i8]* @N_c8_str, i32 1, [1 x i8]* @p_str80, [1 x i8]* @p_str80, i32 2, i32 0, i32* %N_c8, i32* %N_c8)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 60 'specchannel' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 61 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %N_c8, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str81, i32 0, i32 0, [1 x i8]* @p_str82, [1 x i8]* @p_str83, [1 x i8]* @p_str84, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str85, [1 x i8]* @p_str86)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 61 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 62 [1/1] (0.00ns)   --->   "%empty_29 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @A_p_OC_V_c_str, i32 1, [1 x i8]* @p_str87, [1 x i8]* @p_str87, i32 2, i32 0, i64* %A_p_V_c, i64* %A_p_V_c)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 62 'specchannel' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 63 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %A_p_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str105, i32 0, i32 0, [1 x i8]* @p_str123, [1 x i8]* @p_str129, [1 x i8]* @p_str147, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str153, [1 x i8]* @p_str154)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 63 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 64 [1/1] (0.00ns)   --->   "%empty_30 = call i32 (...)* @_ssdm_op_SpecChannel([8 x i8]* @B_p_OC_V_c_str, i32 1, [1 x i8]* @p_str155, [1 x i8]* @p_str155, i32 2, i32 0, i64* %B_p_V_c, i64* %B_p_V_c)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 64 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 65 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %B_p_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str156, i32 0, i32 0, [1 x i8]* @p_str157, [1 x i8]* @p_str158, [1 x i8]* @p_str159, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str160, [1 x i8]* @p_str161)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 65 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 66 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecChannel([9 x i8]* @AB_p_OC_V_c_str, i32 1, [1 x i8]* @p_str162, [1 x i8]* @p_str162, i32 5, i32 0, i64* %AB_p_V_c, i64* %AB_p_V_c)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 66 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 67 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %AB_p_V_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str163, i32 0, i32 0, [1 x i8]* @p_str164, [1 x i8]* @p_str165, [1 x i8]* @p_str166, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str167, [1 x i8]* @p_str168)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 67 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 68 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecChannel([5 x i8]* @N_c9_str, i32 1, [1 x i8]* @p_str98, [1 x i8]* @p_str98, i32 2, i32 0, i32* %N_c9, i32* %N_c9)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 68 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 69 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %N_c9, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str99, i32 0, i32 0, [1 x i8]* @p_str100, [1 x i8]* @p_str101, [1 x i8]* @p_str102, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str103, [1 x i8]* @p_str104)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 69 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 70 [1/1] (0.00ns)   --->   "%empty_33 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @N_c10_str, i32 1, [1 x i8]* @p_str116, [1 x i8]* @p_str116, i32 2, i32 0, i32* %N_c10, i32* %N_c10)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 70 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 71 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %N_c10, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str117, i32 0, i32 0, [1 x i8]* @p_str118, [1 x i8]* @p_str119, [1 x i8]* @p_str120, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str121, [1 x i8]* @p_str122)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 71 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 72 [1/1] (0.00ns)   --->   "%empty_34 = call i32 (...)* @_ssdm_op_SpecChannel([6 x i8]* @N_c11_str, i32 1, [1 x i8]* @p_str140, [1 x i8]* @p_str140, i32 2, i32 0, i32* %N_c11, i32* %N_c11)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 72 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 73 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %N_c11, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str141, i32 0, i32 0, [1 x i8]* @p_str142, [1 x i8]* @p_str143, [1 x i8]* @p_str144, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str145, [1 x i8]* @p_str146)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133]   --->   Operation 73 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 74 [1/2] (0.00ns)   --->   "call fastcc void @writeAB(i512* %ABStream_V_V, i512* %gmem2, i64* nocapture %AB_p_V_c, i32* nocapture %N_c11)" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:157]   --->   Operation 74 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 75 [1/1] (0.00ns)   --->   "ret void" [/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:159]   --->   Operation 75 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.9ns.
+
+ <State 1>: 2.22ns
+The critical path consists of the following:
+	s_axi read on port 'N' (/ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:133) [8]  (1 ns)
+	'call' operation ('call_ln151', /ihome/ageorge/mah473/Desktop/Vitis_Accel_Examples/lab5_test_v4/src/mm.cpp:151) to 'mm.entry616' [56]  (1.22 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

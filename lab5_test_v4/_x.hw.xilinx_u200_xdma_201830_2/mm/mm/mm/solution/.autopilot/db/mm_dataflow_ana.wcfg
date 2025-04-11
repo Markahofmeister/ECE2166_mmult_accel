@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mm.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_mm_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm//AESL_inst_mm_mm_activity">
+         <obj_property name="label">AESL_inst_mm_mm_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_mm_mm_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_mm_mm_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm//AESL_inst_mm_mm_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm//AESL_inst_mm_mm_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm//AESL_inst_mm_mm_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/mm_entry616_U0_activity">
+            <obj_property name="label">mm_entry616_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">mm_entry616_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">mm_entry616_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/mm_entry616_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/mm_entry616_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/mm_entry616_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/readA_U0_activity">
+            <obj_property name="label">readA_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">readA_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">readA_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/readA_U0/readA_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/readA_U0/readA_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/readA_U0/readA_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/changeARate_U0_activity">
+            <obj_property name="label">changeARate_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">changeARate_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">changeARate_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/changeARate_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/changeARate_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/changeARate_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/readB_U0_activity">
+            <obj_property name="label">readB_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">readB_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">readB_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/readB_U0/readB_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/readB_U0/readB_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/readB_U0/readB_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/comp_U0_activity">
+            <obj_property name="label">comp_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">comp_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">comp_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/comp_U0/comp_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/comp_U0/comp_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/comp_U0/comp_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/writeAB_U0_activity">
+            <obj_property name="label">writeAB_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">writeAB_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">writeAB_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/writeAB_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/writeAB_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/writeAB_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm//AESL_inst_mm_mm_activity">
+      <obj_property name="ElementShortName">AESL_inst_mm_mm_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_mm_mm_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_mm_mm_group">
+      <obj_property name="label">AESL_inst_mm_mm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/mm_entry616_U0_activity">
+         <obj_property name="ElementShortName">mm_entry616_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">mm_entry616_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/readA_U0_activity">
+         <obj_property name="ElementShortName">readA_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">readA_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/changeARate_U0_activity">
+         <obj_property name="ElementShortName">changeARate_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">changeARate_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/readB_U0_activity">
+         <obj_property name="ElementShortName">readB_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">readB_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/comp_U0_activity">
+         <obj_property name="ElementShortName">comp_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">comp_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/writeAB_U0_activity">
+         <obj_property name="ElementShortName">writeAB_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">writeAB_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_mm_mm_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="mm_entry616_U0_group">
+         <obj_property name="label">mm_entry616_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="mm_entry616_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="mm_entry616_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="mm_entry616_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="N_out_group">
+               <obj_property name="label">N_out(N_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out_blk_n">
+                  <obj_property name="ElementShortName">N_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out_full_n">
+                  <obj_property name="ElementShortName">N_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out_write">
+                  <obj_property name="ElementShortName">N_out_write</obj_property>
+                  <obj_property name="ObjectShortName">N_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_out1_group">
+               <obj_property name="label">N_out1(N_c8_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out1_blk_n">
+                  <obj_property name="ElementShortName">N_out1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out1_full_n">
+                  <obj_property name="ElementShortName">N_out1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/N_out1_write">
+                  <obj_property name="ElementShortName">N_out1_write</obj_property>
+                  <obj_property name="ObjectShortName">N_out1_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="A_p_V_out_group">
+               <obj_property name="label">A_p_V_out(A_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/A_p_V_out_blk_n">
+                  <obj_property name="ElementShortName">A_p_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/A_p_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/A_p_V_out_full_n">
+                  <obj_property name="ElementShortName">A_p_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/A_p_V_out_write">
+                  <obj_property name="ElementShortName">A_p_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="B_p_V_out_group">
+               <obj_property name="label">B_p_V_out(B_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/B_p_V_out_blk_n">
+                  <obj_property name="ElementShortName">B_p_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/B_p_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/B_p_V_out_full_n">
+                  <obj_property name="ElementShortName">B_p_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/B_p_V_out_write">
+                  <obj_property name="ElementShortName">B_p_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_p_V_out_group">
+               <obj_property name="label">AB_p_V_out(AB_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/AB_p_V_out_blk_n">
+                  <obj_property name="ElementShortName">AB_p_V_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AB_p_V_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/AB_p_V_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/AB_p_V_out_full_n">
+                  <obj_property name="ElementShortName">AB_p_V_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">AB_p_V_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/mm_entry616_U0/AB_p_V_out_write">
+                  <obj_property name="ElementShortName">AB_p_V_out_write</obj_property>
+                  <obj_property name="ObjectShortName">AB_p_V_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="readA_U0_group">
+         <obj_property name="label">readA_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="readA_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="A_p_V_offset_group">
+               <obj_property name="label">A_p_V_offset(A_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/A_p_V_offset_blk_n">
+                  <obj_property name="ElementShortName">A_p_V_offset_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_offset_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/A_p_V_offset_dout">
+                  <obj_property name="ElementShortName">A_p_V_offset_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_offset_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/A_p_V_offset_empty_n">
+                  <obj_property name="ElementShortName">A_p_V_offset_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_offset_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/A_p_V_offset_read">
+                  <obj_property name="ElementShortName">A_p_V_offset_read</obj_property>
+                  <obj_property name="ObjectShortName">A_p_V_offset_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_group">
+               <obj_property name="label">N(N_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_blk_n">
+                  <obj_property name="ElementShortName">N_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_dout">
+                  <obj_property name="ElementShortName">N_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">N_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_empty_n">
+                  <obj_property name="ElementShortName">N_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">N_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_read">
+                  <obj_property name="ElementShortName">N_read</obj_property>
+                  <obj_property name="ObjectShortName">N_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="readA_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="readA_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="AStreamWide_V_V_group">
+               <obj_property name="label">AStreamWide_V_V(AStreamWide_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/AStreamWide_V_V_blk_n">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/AStreamWide_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/AStreamWide_V_V_full_n">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/AStreamWide_V_V_write">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_out_group">
+               <obj_property name="label">N_out(N_c9_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_out_blk_n">
+                  <obj_property name="ElementShortName">N_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_out_full_n">
+                  <obj_property name="ElementShortName">N_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readA_U0/N_out_write">
+                  <obj_property name="ElementShortName">N_out_write</obj_property>
+                  <obj_property name="ObjectShortName">N_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="changeARate_U0_group">
+         <obj_property name="label">changeARate_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="changeARate_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="AStreamWide_V_V_group">
+               <obj_property name="label">AStreamWide_V_V(AStreamWide_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStreamWide_V_V_blk_n">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStreamWide_V_V_dout">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStreamWide_V_V_empty_n">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStreamWide_V_V_read">
+                  <obj_property name="ElementShortName">AStreamWide_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">AStreamWide_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_group">
+               <obj_property name="label">N(N_c9_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_blk_n">
+                  <obj_property name="ElementShortName">N_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_dout">
+                  <obj_property name="ElementShortName">N_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">N_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_empty_n">
+                  <obj_property name="ElementShortName">N_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">N_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_read">
+                  <obj_property name="ElementShortName">N_read</obj_property>
+                  <obj_property name="ObjectShortName">N_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="changeARate_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="changeARate_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="AStream_V_group">
+               <obj_property name="label">AStream_V(AStream_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStream_V_blk_n">
+                  <obj_property name="ElementShortName">AStream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStream_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStream_V_full_n">
+                  <obj_property name="ElementShortName">AStream_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/AStream_V_write">
+                  <obj_property name="ElementShortName">AStream_V_write</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_out_group">
+               <obj_property name="label">N_out(N_c10_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_out_blk_n">
+                  <obj_property name="ElementShortName">N_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_out_full_n">
+                  <obj_property name="ElementShortName">N_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/changeARate_U0/N_out_write">
+                  <obj_property name="ElementShortName">N_out_write</obj_property>
+                  <obj_property name="ObjectShortName">N_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="readB_U0_group">
+         <obj_property name="label">readB_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="readB_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="B_p_V_offset_group">
+               <obj_property name="label">B_p_V_offset(B_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/B_p_V_offset_blk_n">
+                  <obj_property name="ElementShortName">B_p_V_offset_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_offset_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/B_p_V_offset_dout">
+                  <obj_property name="ElementShortName">B_p_V_offset_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_offset_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/B_p_V_offset_empty_n">
+                  <obj_property name="ElementShortName">B_p_V_offset_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_offset_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/B_p_V_offset_read">
+                  <obj_property name="ElementShortName">B_p_V_offset_read</obj_property>
+                  <obj_property name="ObjectShortName">B_p_V_offset_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_group">
+               <obj_property name="label">N(N_c8_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/N_blk_n">
+                  <obj_property name="ElementShortName">N_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/N_dout">
+                  <obj_property name="ElementShortName">N_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">N_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/N_empty_n">
+                  <obj_property name="ElementShortName">N_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">N_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/N_read">
+                  <obj_property name="ElementShortName">N_read</obj_property>
+                  <obj_property name="ObjectShortName">N_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="readB_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="readB_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="BStream_V_V_group">
+               <obj_property name="label">BStream_V_V(BStream_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/BStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">BStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/BStream_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/BStream_V_V_full_n">
+                  <obj_property name="ElementShortName">BStream_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/readB_U0/BStream_V_V_write">
+                  <obj_property name="ElementShortName">BStream_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="comp_U0_group">
+         <obj_property name="label">comp_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="comp_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="AStream_V_group">
+               <obj_property name="label">AStream_V(AStream_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/AStream_V_blk_n">
+                  <obj_property name="ElementShortName">AStream_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/AStream_V_dout">
+                  <obj_property name="ElementShortName">AStream_V_dout[15:0]</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_dout[15:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/AStream_V_empty_n">
+                  <obj_property name="ElementShortName">AStream_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/AStream_V_read">
+                  <obj_property name="ElementShortName">AStream_V_read</obj_property>
+                  <obj_property name="ObjectShortName">AStream_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="BStream_V_V_group">
+               <obj_property name="label">BStream_V_V(BStream_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/BStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">BStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/BStream_V_V_dout">
+                  <obj_property name="ElementShortName">BStream_V_V_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/BStream_V_V_empty_n">
+                  <obj_property name="ElementShortName">BStream_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/BStream_V_V_read">
+                  <obj_property name="ElementShortName">BStream_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">BStream_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_group">
+               <obj_property name="label">N(N_c10_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_blk_n">
+                  <obj_property name="ElementShortName">N_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_dout">
+                  <obj_property name="ElementShortName">N_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">N_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_empty_n">
+                  <obj_property name="ElementShortName">N_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">N_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_read">
+                  <obj_property name="ElementShortName">N_read</obj_property>
+                  <obj_property name="ObjectShortName">N_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="comp_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="comp_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ABStream_V_V_group">
+               <obj_property name="label">ABStream_V_V(ABStream_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ABStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">ABStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ABStream_V_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ABStream_V_V_full_n">
+                  <obj_property name="ElementShortName">ABStream_V_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/ABStream_V_V_write">
+                  <obj_property name="ElementShortName">ABStream_V_V_write</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_out_group">
+               <obj_property name="label">N_out(N_c11_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_out_blk_n">
+                  <obj_property name="ElementShortName">N_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_out_full_n">
+                  <obj_property name="ElementShortName">N_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">N_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/comp_U0/N_out_write">
+                  <obj_property name="ElementShortName">N_out_write</obj_property>
+                  <obj_property name="ObjectShortName">N_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="writeAB_U0_group">
+         <obj_property name="label">writeAB_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="writeAB_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="ABStream_V_V_group">
+               <obj_property name="label">ABStream_V_V(ABStream_V_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ABStream_V_V_blk_n">
+                  <obj_property name="ElementShortName">ABStream_V_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ABStream_V_V_dout">
+                  <obj_property name="ElementShortName">ABStream_V_V_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ABStream_V_V_empty_n">
+                  <obj_property name="ElementShortName">ABStream_V_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ABStream_V_V_read">
+                  <obj_property name="ElementShortName">ABStream_V_V_read</obj_property>
+                  <obj_property name="ObjectShortName">ABStream_V_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="AB_V_offset_group">
+               <obj_property name="label">AB_V_offset(AB_p_V_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/AB_V_offset_blk_n">
+                  <obj_property name="ElementShortName">AB_V_offset_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">AB_V_offset_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/AB_V_offset_dout">
+                  <obj_property name="ElementShortName">AB_V_offset_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">AB_V_offset_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/AB_V_offset_empty_n">
+                  <obj_property name="ElementShortName">AB_V_offset_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">AB_V_offset_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/AB_V_offset_read">
+                  <obj_property name="ElementShortName">AB_V_offset_read</obj_property>
+                  <obj_property name="ObjectShortName">AB_V_offset_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="N_group">
+               <obj_property name="label">N(N_c11_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/N_blk_n">
+                  <obj_property name="ElementShortName">N_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">N_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/N_dout">
+                  <obj_property name="ElementShortName">N_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">N_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/N_empty_n">
+                  <obj_property name="ElementShortName">N_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">N_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/N_read">
+                  <obj_property name="ElementShortName">N_read</obj_property>
+                  <obj_property name="ObjectShortName">N_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="writeAB_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_mm_top/AESL_inst_mm_mm/writeAB_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="writeAB_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
