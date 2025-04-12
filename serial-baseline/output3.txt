@@ -1,0 +1,489 @@
+==========================================================
+START M = 512
+==========================================================
+==5057== Memcheck, a memory error detector
+==5057== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5057== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5057== Command: ./mmult_serial.X 512
+==5057== 
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5057-- WARNING: Serious error when reading debug info
+--5057-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5057-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
+Matrix multiply calculation completed in 0.728749 seconds.
+==5057== 
+==5057== HEAP SUMMARY:
+==5057==     in use at exit: 8 bytes in 1 blocks
+==5057==   total heap usage: 5 allocs, 4 frees, 3,178,552 bytes allocated
+==5057== 
+==5057== LEAK SUMMARY:
+==5057==    definitely lost: 0 bytes in 0 blocks
+==5057==    indirectly lost: 0 bytes in 0 blocks
+==5057==      possibly lost: 0 bytes in 0 blocks
+==5057==    still reachable: 8 bytes in 1 blocks
+==5057==         suppressed: 0 bytes in 0 blocks
+==5057== Rerun with --leak-check=full to see details of leaked memory
+==5057== 
+==5057== For counts of detected and suppressed errors, rerun with: -v
+==5057== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Matrix multiply calculation completed in 0.058684 seconds.
+Matrix multiply calculation completed in 0.058605 seconds.
+Matrix multiply calculation completed in 0.058682 seconds.
+Matrix multiply calculation completed in 0.058595 seconds.
+==========================================================
+START M = 1024
+==========================================================
+==5064== Memcheck, a memory error detector
+==5064== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5064== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5064== Command: ./mmult_serial.X 1024
+==5064== 
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5064-- WARNING: Serious error when reading debug info
+--5064-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5064-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
+Matrix multiply calculation completed in 5.753705 seconds.
+==5064== 
+==5064== HEAP SUMMARY:
+==5064==     in use at exit: 8 bytes in 1 blocks
+==5064==   total heap usage: 5 allocs, 4 frees, 12,615,736 bytes allocated
+==5064== 
+==5064== LEAK SUMMARY:
+==5064==    definitely lost: 0 bytes in 0 blocks
+==5064==    indirectly lost: 0 bytes in 0 blocks
+==5064==      possibly lost: 0 bytes in 0 blocks
+==5064==    still reachable: 8 bytes in 1 blocks
+==5064==         suppressed: 0 bytes in 0 blocks
+==5064== Rerun with --leak-check=full to see details of leaked memory
+==5064== 
+==5064== For counts of detected and suppressed errors, rerun with: -v
+==5064== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Matrix multiply calculation completed in 0.464341 seconds.
+Matrix multiply calculation completed in 0.463987 seconds.
+Matrix multiply calculation completed in 0.464469 seconds.
+Matrix multiply calculation completed in 0.464355 seconds.
+==========================================================
+START M = 2048
+==========================================================
+==5083== Memcheck, a memory error detector
+==5083== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5083== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==5083== Command: ./mmult_serial.X 2048
+==5083== 
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- Ignoring non-Dwarf2/3/4 block in .debug_info
+--5083-- WARNING: Serious error when reading debug info
+--5083-- When reading debug info from /ihome/crc/install/gcc/12.2.0/lib64/libgomp.so.1.0.0:
+--5083-- parse_CU_Header: is neither DWARF2 nor DWARF3 nor DWARF4
+Matrix multiply calculation completed in 45.664890 seconds.
+==5083== 
+==5083== HEAP SUMMARY:
+==5083==     in use at exit: 8 bytes in 1 blocks
+==5083==   total heap usage: 5 allocs, 4 frees, 50,364,472 bytes allocated
+==5083== 
+==5083== LEAK SUMMARY:
+==5083==    definitely lost: 0 bytes in 0 blocks
+==5083==    indirectly lost: 0 bytes in 0 blocks
+==5083==      possibly lost: 0 bytes in 0 blocks
+==5083==    still reachable: 8 bytes in 1 blocks
+==5083==         suppressed: 0 bytes in 0 blocks
+==5083== Rerun with --leak-check=full to see details of leaked memory
+==5083== 
+==5083== For counts of detected and suppressed errors, rerun with: -v
+==5083== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Matrix multiply calculation completed in 3.683702 seconds.
+Matrix multiply calculation completed in 3.687195 seconds.
+Matrix multiply calculation completed in 3.683039 seconds.
+Matrix multiply calculation completed in 3.683491 seconds.
