@@ -20,4 +20,24 @@ lib/
 *.swp
 */build_dir.hw.xilinx_u200_xdma_201830_2/*
 !*/build_dir.hw.xilinx_u200_xdma_201830_2/*.xclbin
+demo/
+hello_world/
+hello_world_2/
+lab3_test/
+lab3_test_v0/
+lab3_test_v1/
+lab3_test_v2/
+lab3_test_v3/
+lab4_test/
+lab5_test_v0/
+lab5_test_v1/
+lab5_test_v2/
+lab5_test_v3/
+mm/
+vadd.xo
+vadd.xo_FILES/
+
+
+
+
 
